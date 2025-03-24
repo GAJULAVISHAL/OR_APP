@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import QRCodePassGenerator from "./pages/QrPage"
-import { Pass } from "./components/pass"
+import { Pass } from "./components/Pass"
 
 
 function App() {
