@@ -56,7 +56,7 @@ export default function QRCodePassGenerator() {
         console.log(formData)
         // setLoading(true)
         try {
-            const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/generate-pass`,formData);
+            const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/generate-pass`, formData);
             setLoading(false);
             const qrCode = response.data.pass.qrCodeUrl;
             setQrCode(qrCode);
@@ -300,7 +300,7 @@ export default function QRCodePassGenerator() {
             {activeTab === 2 && (
                 <Passes />
             )}
-        
+            
         </div>
     );
 }

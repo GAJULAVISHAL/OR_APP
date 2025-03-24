@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-// import { Landing } from "./pages/Landing"
 import QRCodePassGenerator from "./pages/QrPage"
+import { Pass } from "./components/pass"
 
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<QRCodePassGenerator/>}/>
+          <Route path="/pass/:id" element={<Pass/>}/>
         </Routes>
       </BrowserRouter>
     </>
