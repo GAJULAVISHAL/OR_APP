@@ -36,7 +36,7 @@ export const usePasses = () => {
     const [loading, setLoading] = useState<boolean>(true)
     const [passes, setPasses] = useState<pass[]>()
     useEffect(() => {
-        const id = localStorage.getItem("userID")
+        const id = localStorage.getItem("userId")
         axios.get(`${import.meta.env.VITE_BACKEND_URL}/passes/${id}`)
             .then(response => {
                 setPasses(response.data.passes)
